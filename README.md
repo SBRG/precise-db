@@ -18,6 +18,6 @@ The Jupyter notebook `exploratory_analysis.ipynb` walks users through these data
 Requirements:
 Python 3.6 or greater
 
-pandas>=0.24.2
-matplotlib>=3.0.3
-scipy>=1.2.1
+pandas>=0.24.2  
+matplotlib>=3.0.3  
+scipy>=1.2.1  
