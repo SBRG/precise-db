@@ -13,11 +13,22 @@ The following data files are available in the `data` folder:
 * A.csv: Condition-specific activities for each i-modulon
 * curated_enrichments.csv: Detailed information on i-modulons and their linked regulator(s)
 
-The Jupyter notebook `exploratory_analysis.ipynb` walks users through these data files and includes a few small functions for interrogating i-modulons.
+## Scripts
+To generate robust independent components for a dataset, execute the `run_ica.sh` script:  
+`run_ica <filename.csv>`  
+where `<filename.csv>` is a comma-separated file of gene expression. Data must be centered using a reference condition (See `data/log_tpm_norm.csv` for an example)
+Additional options are included as flags. Decreasing tolerance (e.g. `-t 1e-3`) will reduce runtime, but will also reduce the final number of independent components.
+
+## Notebooks
+The Jupyter notebook `exploratory_analysis.ipynb` walks users through the data files and includes a few small functions for interrogating i-modulons.
 
 Requirements:
 Python 3.6 or greater
 
 pandas>=0.24.2  
 matplotlib>=3.0.3  
-scipy>=1.2.1  
+scipy>=1.2.1
+mpi4py>=3.0.1
+scikit-learn>=0.20.3
+numpy>=1.16.4
+
