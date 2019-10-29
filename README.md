@@ -27,8 +27,8 @@ Python 3.6 or greater
 
 pandas>=0.24.2  
 matplotlib>=3.0.3  
-scipy>=1.2.1
-mpi4py>=3.0.1
-scikit-learn>=0.20.3
-numpy>=1.16.4
+scipy>=1.2.1  
+mpi4py>=3.0.1  
+scikit-learn>=0.20.3  
+numpy>=1.16.4  
 
