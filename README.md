@@ -2,6 +2,8 @@
 
 PRECISE is an RNA-seq compendium for _Escherichia coli_ from the Systems Biology Research group at UC San Diego.
 
+[![DOI](https://zenodo.org/badge/187104662.svg)](https://zenodo.org/badge/latestdoi/187104662)
+
 ## Data
 The following data files are available in the `data` folder:
 * log_tpm_full.csv: Expression levels for all genes in E. coli
@@ -27,8 +29,8 @@ Python 3.6 or greater
 
 pandas>=0.24.2  
 matplotlib>=3.0.3  
-scipy>=1.2.1
-mpi4py>=3.0.1
-scikit-learn>=0.20.3
-numpy>=1.16.4
+scipy>=1.2.1  
+mpi4py>=3.0.1  
+scikit-learn>=0.20.3  
+numpy>=1.16.4  
 
