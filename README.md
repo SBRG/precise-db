@@ -15,6 +15,8 @@ The following data files are available in the `data` folder:
 * S.csv: Gene coefficients for each i-modulon
 * A.csv: Condition-specific activities for each i-modulon
 * curated_enrichments.csv: Detailed information on i-modulons and their linked regulator(s)
+* imodulon_gene_names.txt: List of gene names in each i-modulon
+* imodulon_gene_bnumbers.txt: List of genes (as b-numbers) in each i-modulon
 
 ## Scripts
 To generate robust independent components for a dataset, execute the `run_ica.sh` script:  
