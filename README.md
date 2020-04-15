@@ -8,6 +8,7 @@ PRECISE is an RNA-seq compendium for _Escherichia coli_ from the Systems Biology
 The following data files are available in the `data` folder:
 * log_tpm_full.csv: Expression levels for all genes in E. coli
 * log_tpm.csv: Expression levels for 3,923 genes in E. coli (noisy genes have been removed)
+* log_tpm_norm.csv: `log_tpm.csv` centered to reference condition (WT on glucose M9 media)
 * metadata.csv: Experimental metadata (e.g. strain descriptions, carbon source etc.) for all 278 conditions in PRECISE
 * gene_info.csv: Descriptive characteristics of genes, including location, operon, and COG group
 * TRN.csv: Known regulator-gene interactions from RegulonDB 10.0
