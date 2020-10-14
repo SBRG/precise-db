@@ -19,6 +19,7 @@ The following data files are available in the `data` folder:
 * imodulon_gene_bnumbers.txt: List of genes (as b-numbers) in each iModulon
 
 ## Scripts
+A conda environment for this code has been provided [here](https://github.com/SBRG/precise-db/blob/master/environment.yml)  
 To generate robust independent components for a dataset, execute the `run_ica.sh` script:  
 `run_ica <filename.csv>`  
 where `<filename.csv>` is a comma-separated file of gene expression. Data must be centered using a reference condition (See `data/log_tpm_norm.csv` for an example)
@@ -29,5 +30,5 @@ The Jupyter notebook `exploratory_analysis.ipynb` walks users through the data f
 
 Requirements:
 Python 3.6 or greater  
-Conda environment specifications are listed in `environment.yml`  
+Conda environment specifications are listed in [environment.yml](https://github.com/SBRG/precise-db/blob/master/environment.yml)   
 Versions of `scikit-learn` above `0.20.3` cause an error when performing ICA.
