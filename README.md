@@ -28,7 +28,7 @@ Additional options are included as flags. Decreasing tolerance (e.g. `-t 1e-3`) 
 ## Notebooks
 The Jupyter notebook `exploratory_analysis.ipynb` walks users through the data files and includes a few small functions for interrogating iModulons.
 
-Requirements:
+## Requirements:
 Python 3.6 or greater  
 Conda environment specifications are listed in [environment.yml](https://github.com/SBRG/precise-db/blob/master/environment.yml)   
 Versions of `scikit-learn` above `0.20.3` cause an error when performing ICA.
