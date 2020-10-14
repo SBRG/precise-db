@@ -12,11 +12,11 @@ The following data files are available in the `data` folder:
 * metadata.csv: Experimental metadata (e.g. strain descriptions, carbon source etc.) for all 278 conditions in PRECISE
 * gene_info.csv: Descriptive characteristics of genes, including location, operon, and COG group
 * TRN.csv: Known regulator-gene interactions from RegulonDB 10.0
-* S.csv: Gene coefficients for each i-modulon
-* A.csv: Condition-specific activities for each i-modulon
-* curated_enrichments.csv: Detailed information on i-modulons and their linked regulator(s)
-* imodulon_gene_names.txt: List of gene names in each i-modulon
-* imodulon_gene_bnumbers.txt: List of genes (as b-numbers) in each i-modulon
+* S.csv: Gene coefficients for each iModulon
+* A.csv: Condition-specific activities for each iModulon
+* curated_enrichments.csv: Detailed information on iModulons and their linked regulator(s)
+* imodulon_gene_names.txt: List of gene names in each iModulon
+* imodulon_gene_bnumbers.txt: List of genes (as b-numbers) in each iModulon
 
 ## Scripts
 To generate robust independent components for a dataset, execute the `run_ica.sh` script:  
@@ -25,15 +25,9 @@ where `<filename.csv>` is a comma-separated file of gene expression. Data must b
 Additional options are included as flags. Decreasing tolerance (e.g. `-t 1e-3`) will reduce runtime, but will also reduce the final number of independent components.
 
 ## Notebooks
-The Jupyter notebook `exploratory_analysis.ipynb` walks users through the data files and includes a few small functions for interrogating i-modulons.
+The Jupyter notebook `exploratory_analysis.ipynb` walks users through the data files and includes a few small functions for interrogating iModulons.
 
 Requirements:
-Python 3.6 or greater
-
-pandas>=0.24.2  
-matplotlib>=3.0.3  
-scipy>=1.2.1  
-mpi4py>=3.0.1  
-scikit-learn>=0.20.3  
-numpy>=1.16.4  
-
+Python 3.6 or greater  
+Conda environment specifications are listed in `environment.yml`  
+Versions of `scikit-learn` above `0.20.3` cause an error when performing ICA.
