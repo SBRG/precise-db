@@ -1,0 +1,12 @@
+name: precise-db
+channels:
+  - defaults
+dependencies:
+  - scipy
+  - matplotlib
+  - scikit-learn=0.20.3
+  - pandas
+  - numpy
+  - mpi4py
+  - jupyter
+prefix: /home/anand/miniconda3/envs/precise-db
