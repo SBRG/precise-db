@@ -88,7 +88,7 @@ for i,j in worker_tasks[rank]:
     S2 = pd.read_csv(os.path.join(tmp_dir,'proc_{}_S.csv'.format(j)),index_col=0)
     dist = abs(np.dot(S1.T,S2))
     dist[dist < .5] = 0
-    sparse.save_npz(os.path.join(tmp_dir,'dist_{}_{}.npz'.format(i,j)),sparse.coo_matrix(dist))
+    sparse.save_npz(os.path.join(tmp_dir,'dist_{}_{}.npz'.format(i,j)),sparse.coo_matrix(np.clip(dist,0,1)))
     counter += 1
     #print('Completed distance block {} of {} on Processor {}'.format(counter,n_tasks,rank)
     #t = timeit(t)
